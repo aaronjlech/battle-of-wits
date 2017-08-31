@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 
-const fetchQuestion(params) {
-   axios.get(`https://opentdb.com/api.php?amount=1&category=25&difficulty=${params.difficulty}&type=multiple`)
+export function fetchQuestion(params) {
+   const { category, difficulty} = params
+   return axios.get(`https://opentdb.com/api.php?amount=1&category=${category}&difficulty=${difficulty}&type=multiple`)
 }
