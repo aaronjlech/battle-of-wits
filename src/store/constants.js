@@ -12,7 +12,9 @@ const constants = [
    'SET_CURRENT_QUESTION',
    'SET_QUESTION_CLOCK',
    'SUBMIT_ANSWER',
-   'SET_GAME_WINNER'
+   'SET_GAME_WINNER',
+   'PAUSE_GAME',
+   'START_GAME'
 ].reduce( (obj, item) => {
    obj[item] = item
    return obj
