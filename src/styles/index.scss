@@ -1,6 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@import 'node_modules/foundation-sites/scss/foundation.scss';
+@import './utilities/_variables.scss';
 
-}
+@include foundation-everything;
