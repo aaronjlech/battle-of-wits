@@ -4,7 +4,6 @@ const constants = [
    'ADD_TEAMS',
    'SET_TOTAL_ROUNDS',
    'SET_CURRENT_ROUND',
-   'ADD_ROUNDS',
    'REMOVE_ROUND',
    'SET_TEAM_SCORE',
    'SET_CURRENT_TEAM',
@@ -14,9 +13,10 @@ const constants = [
    'SUBMIT_ANSWER',
    'SET_GAME_WINNER',
    'PAUSE_GAME',
+   'END_GAME',
    'START_GAME'
-].reduce( (obj, item) => {
-   obj[item] = item
+].reduce( (obj, actionType) => {
+   obj[actionType] = actionType
    return obj
 }, {})
 
