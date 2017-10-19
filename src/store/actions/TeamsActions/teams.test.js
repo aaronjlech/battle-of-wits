@@ -14,5 +14,6 @@ describe('team actions', () => {
       }
       expect(actions.decreaseTeams()).toEqual(expectedAction)
    })
+   it('')
 
 })

@@ -2,3 +2,13 @@
 @import './utilities/_variables.scss';
 
 @include foundation-everything;
+
+.button{
+  &:focus{
+    outline: none;
+  }
+}
+
+.button-round{
+  border-radius: 20px;
+}

@@ -5000,3 +5000,9 @@ a.thumbnail {
     flex-direction: column; }
   .large-flex-dir-column-reverse {
     flex-direction: column-reverse; } }
+
+.button:focus {
+  outline: none; }
+
+.button-round {
+  border-radius: 20px; }
