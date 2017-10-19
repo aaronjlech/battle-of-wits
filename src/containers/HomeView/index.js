@@ -4,10 +4,17 @@ import Header from '../../components/Header';
 import GameForm from './GameForm';
 
 export default class HomeView extends Component {
+  state = {
 
+  }
   handleSubmit = (evt) => {
     evt.preventDefault()
     console.log('fia fia ')
+  }
+  handleOnChange = (evt) => {
+    evt.preventDefault();
+    const { name, value } = evt.target
+    this.setState({ [name] : value })
   }
 
   render(){
@@ -18,6 +25,7 @@ export default class HomeView extends Component {
         />
         <GameForm
           handleSubmit={this.handleSubmit}
+          onChange={this.handleOnChange}
         />
 
       </div>
