@@ -5,13 +5,14 @@ import GameForm from './GameForm';
 
 export default class HomeView extends Component {
   state = {
-
+    numberOfTeams: 0,
+    teams: []
   }
   handleSubmit = (evt) => {
     evt.preventDefault()
     console.log('fia fia ')
   }
-  handleOnChange = (evt) => {
+  handleChange = (evt) => {
     evt.preventDefault();
     const { name, value } = evt.target
     this.setState({ [name] : value })
@@ -25,7 +26,7 @@ export default class HomeView extends Component {
         />
         <GameForm
           handleSubmit={this.handleSubmit}
-          onChange={this.handleOnChange}
+          onChange={this.handleChange}
         />
 
       </div>
